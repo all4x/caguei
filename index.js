@@ -6,9 +6,6 @@ const prisma = new PrismaClient();
 
 const client = new Client({
     authStrategy: new LocalAuth({ clientId: "client-one" }),
-    puppeteer: {
-        executablePath: "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
-    }
 });
 
 client.on('qr', (qr) => {
