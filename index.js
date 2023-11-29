@@ -52,7 +52,7 @@ client.on('message', async (message) => {
         client.sendMessage(message.from, `💩 Membro ${userName} cagou! 🔥🎉 Contagem atual: ${existingEntry ? existingEntry.count + 1 : 1} ${poopEmojis}`);
     } else if (message.body.toLowerCase().includes('merda')) {
         const podium = await prisma.merdas.findMany({
-            where: { memberId: message.from },
+            where: { memberId: message.author },
             orderBy: { count: 'desc' },
             take: 3,
         });
