@@ -50,14 +50,13 @@ client.on('message', async (message) => {
         const userName = contato.shortName || contato.pushname || 'Usuário Desconhecido';
 
         client.sendMessage(message.from, `💩 Membro ${userName} cagou! 🔥🎉 Contagem atual: ${existingEntry ? existingEntry.count + 1 : 1} ${poopEmojis}`);
-    } else if (message.body.toLowerCase().includes('merda')) {
+    } else if (message.body.toLowerCase().includes('pódio')) {
         const podium = await prisma.merdas.findMany({
-            where: { memberId: message.author },
             orderBy: { count: 'desc' },
-            take: 3,
+            take: 5,
         });
 
-        let podiumMessage = '🏆 Pódio dos Cagadores 🏆\n';
+        let podiumMessage = '🏆 Pódio dos Cagadores 🏆\n\n';
 
         podium.forEach((entry, index) => {
             const contato = `Membro ${index + 1}: ${entry.userName || 'Usuário Desconhecido'}`;
