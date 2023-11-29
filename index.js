@@ -23,7 +23,7 @@ client.on('message', async (message) => {
 
     if (message.body.toLowerCase().includes('caguei')) {
         const existingEntry = await prisma.merdas.findFirst({
-            where: { memberId: message.from }
+            where: { memberId: message.author }
         });
 
         let poopEmojis = '';
@@ -40,7 +40,7 @@ client.on('message', async (message) => {
             const userName = contato.shortName || contato.pushname || 'Usuário Desconhecido';
 
             await prisma.merdas.create({
-                data: { userName, memberId: message.from, count: 1 }
+                data: { userName, memberId: message.author, count: 1 }
             });
 
             poopEmojis = '💩';
