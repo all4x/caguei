@@ -12,7 +12,7 @@ WhatsApp API: whatsapp-web.js versão 1.23.0.
 
 ## Funcionalidades
 
-1. **Contagem Simples:** Os membros do grupo podem adicionar uma "merda" à contagem usando o comando adequado.
+1. **Contagem Simples:** Os membros do grupo podem adicionar uma "merda" à contagem usando o comando adequado (caguei).
 
 2. **Reset Manual:** O contador pode ser reiniciado manualmente pelo administrador do grupo, enviando a mensagem 'reset' no WhatsApp.
 
