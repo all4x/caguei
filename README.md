@@ -2,7 +2,7 @@
 
 ## Visão Geral
 
-Este projeto é um contador de "merdas" desenvolvido para ser integrado a um grupo de WhatsApp. Ele utiliza a biblioteca `whatsapp-web.js` e o banco de dados `Prisma` para rastrear e exibir estatísticas sobre as contribuições dos membros do grupo.
+Este projeto é um contador de "merdas" desenvolvido para ser integrado a um grupo de WhatsApp. Ele utiliza a biblioteca `whatsapp-web.js` e o banco de dados `Sqllite` para rastrear e exibir estatísticas sobre as contribuições dos membros do grupo.
 
 ## Tecnologias Utilizadas
 
