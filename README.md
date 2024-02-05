@@ -22,13 +22,13 @@ WhatsApp API: whatsapp-web.js versão 1.23.0.
 
 1. Adicione o bot ao seu grupo de WhatsApp usando o link de convite fornecido.
 
-2. Utilize o comando `caguei` seguido de uma mensagem para adicionar uma contagem.
+2. Utilize o comando `caguei` adicionar uma contagem.
 
 3. Para reiniciar manualmente a contagem, envie a mensagem 'reset' no WhatsApp.
 
 4. Digite `pódio` para visualizar o pódio dos cagadores no grupo.
 
-5. Configure na linha 4 de index.js seu contato do whatsapp como adminstrador da rinha de merda, ex 55+DD+Número, comando "reset" reseta o placar.
+5. Configure na linha 4 de index.js seu contato do whatsapp como adminstrador da rinha de merda, ex 55+DD+NÙMERO.
 ## Configuração do Desenvolvedor
 
 Se você é um desenvolvedor e deseja contribuir ou personalizar o projeto, siga as etapas abaixo:
