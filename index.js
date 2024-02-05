@@ -3,6 +3,7 @@ const { PrismaClient } = require('@prisma/client');
 const qrcode = require('qrcode-terminal');
 
 const prisma = new PrismaClient();
+const adm = 'seu_numero_aqui' + '@c.us'
 
 const client = new Client({
     authStrategy: new LocalAuth({ clientId: "client-one" }),
@@ -12,12 +13,13 @@ client.on('qr', (qr) => {
     qrcode.generate(qr, { small: true });
 });
 
+
 client.on('ready', () => {
     console.log('Contador de bosta online!');
 });
 
 client.on('message', async (message) => {
-    if (message.author == '556392084934@c.us' && message.body === 'reset') {
+    if (message.author == `${adm}` && message.body === 'reset') {
         await prisma.merdas.deleteMany();
     }
 
@@ -53,7 +55,7 @@ client.on('message', async (message) => {
     } else if (message.body.toLowerCase().includes('pódio')) {
         const podium = await prisma.merdas.findMany({
             orderBy: { count: 'desc' },
-            take: 5,
+            take: 10,
         });
 
         let podiumMessage = '🏆 Pódio dos Cagadores 🏆\n\n';
