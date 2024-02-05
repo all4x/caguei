@@ -1,5 +1,3 @@
-Certamente! Vamos ajustar o README para refletir as mudanças no código:
-
 # Contador de Merda para Grupo de WhatsApp
 
 ## Visão Geral
